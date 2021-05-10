@@ -1,0 +1,206 @@
+.game {
+    width: 800px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid black;
+    margin: 200px 300px 0 300px;
+} 
+
+#start { 
+    display: table;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 45px;
+    color:gray;
+    margin: auto;
+}
+
+#score {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px 0 0 10px;
+    display: inline-block;
+    position: absolute;
+}
+
+#highscore {
+    font-family: 'Roboto Moto', monospace;
+    font-size: 20px;
+    margin: 10px 0 0 200px;
+    display: inline-block;
+}
+
+#dino {
+    width: 50px;
+    height: 45px;
+    background-image: url(images/dino.gif);
+    background-size: 50px 45px;
+    position: relative;
+    top: 275px;
+    left: 50px;
+}
+
+
+.jump {
+    animation: jump 0.7s linear;
+}
+
+
+@keyframes jump {
+    0% {
+        top: 270px;
+    }
+
+    10% {
+        top: 250px;
+    }
+
+    20% {
+        top: 210px;
+    }
+        
+    30% {
+        top: 200px;
+    }
+
+    40% {
+        top: 170px;
+    }
+    
+    50% {
+       top: 200px;
+    }
+
+    60% {
+        top: 215px;
+    }
+    70% {
+        top: 225px;
+    }
+    
+    80%{
+        top: 245px;
+    }
+
+    90% {
+        top: 255px;
+    }
+    
+    95% {
+        top: 260px;
+    }
+
+   
+    100% {
+        top: 270px;
+    }
+
+}
+
+#cactus {
+    width: 30px;
+    height: 35px;
+    position: relative;
+    top: 238px;
+    left: 800px;
+    background-image: url(images/cactus.png);
+    background-size: 30px 35px;
+
+}
+
+.cactus-animation{
+    animation: block 3s infinite linear;
+}
+
+@keyframes block {
+    0% {
+        left: 1200px;
+    }
+
+    100% {
+        left: -20px;
+    }
+}
+
+#bird {
+        width: 40px;
+        height: 30px;
+        position: relative;
+        top: 140px;
+        left: 800px;
+        background-image: url(images/bird.gif);
+        background-size: 40px;
+    }
+
+.bird-animation {
+    animation:bird-animation 8s infinite linear;
+}
+
+@keyframes bird-animation {
+        0% {
+            left: 1200px;
+        }
+    
+        100% {
+            left: 0px;
+        }
+    }
+
+
+.cloud {
+    width: 2000px;
+    height: 80px;
+    background-image: url(images/cloud.jpg);
+    position: absolute;
+    top: 50px;
+    left: 1200px;
+    animation: cloud 6s linear infinite;
+}
+
+
+
+@keyframes cloud {
+    0% {
+        left: 0px;
+    }
+
+    100% {
+        left: -1000px;
+    }
+}
+
+.road {
+    width: 2000px;
+    height: 30px;
+    position: absolute;
+    background-image: url(images/road.png);
+    background-size: 600px 30px;
+    top: 340px;
+    left: 0px;
+}
+
+.animation{
+    animation: road 6s linear infinite;
+    left: 1200px;
+}
+
+@keyframes road {
+    0% {
+        left: 0px;
+    }
+    
+    100% {
+        left: -1000px;
+    }
+}
+
+#gameover {
+    display: none;
+    width: 80px;
+    height: 70px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 45px;
+    color: gray;
+    margin: auto;
+}
