@@ -9,7 +9,7 @@ const start = document.getElementById("start");
 const road = document.getElementById("road");
 const bird = document.getElementById("bird");
 
-//Váriavel inicial
+//Variavel inicial
 let start_game = false;
 
 
